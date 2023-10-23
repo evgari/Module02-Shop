@@ -1,1 +1,1 @@
-body{background-color:#fff}
+.box{background-color:#eee}.box__title{color:red}.box__image{max-width:200px}.box__svg{width:100px;height:100px;color:#8a2be2;cursor:pointer}.box__svg:hover{color:gold}
