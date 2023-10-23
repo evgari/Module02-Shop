@@ -1,0 +1,24 @@
+$bg: #eee;
+
+.box {
+  background-color: $bg;
+
+  &__title {
+    color: #f00;
+  }
+
+  &__image {
+    max-width: 200px;
+  }
+
+  &__svg {
+    width: 100px;
+    height: 100px;
+    color: blueviolet;
+    cursor: pointer;
+
+    &:hover {
+      color: gold;
+    }
+  }
+}
