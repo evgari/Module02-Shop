@@ -1,12 +1,27 @@
-$text: #27300f;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap');
+
+$green: #27300f;
 $orange: #d26a22;
 $white: #fff;
+
+$font-jost: 'Jost', sans-serif;
+$font-cormorant: 'Cormorant', serif;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-jost;
+}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 4rem;
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1440px;
@@ -15,13 +30,13 @@ $white: #fff;
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 48px;
+    gap: 4.8rem;
     list-style-type: none;
   }
 
   &__link {
-    font-size: 16px;
-    color: $text;
+    font-size: 1.6rem;
+    color: $green;
     text-decoration: none;
 
     &:hover {
@@ -30,8 +45,9 @@ $white: #fff;
   }
 
   &__tel {
-    font-size: 16px;
-    color: $text;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $green;
     text-decoration: none;
 
     &:hover {
@@ -41,32 +57,35 @@ $white: #fff;
 
   &__cart {
     position: relative;
-    border: none;
+    border: 1px solid $orange;
     border-radius: 100%;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 3.8rem;
+    height: 3.8rem;
     background-color: $orange;
     background-image: url(../images/cart.svg);
-    background-size: 16px 14px;
+    background-size: 1.6rem 1.4rem;
     background-position: center center;
     background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $green;
+      background-color: $green;
+    }
   }
 
   &__counter {
     position: absolute;
-    right: 10px;
-    top: 6px;
-    font-size: 8px;
+    right: 1rem;
+    top: .6rem;
+    font-size: .8rem;
     color: $white;
   }
 }
 
 .logo {
-  display: block;
-  width: 120px;
-  height: 32px;
-  background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  img {
+    display: block;
+  }
 }
