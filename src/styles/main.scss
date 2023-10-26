@@ -14,6 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: $font-jost;
+  color: $green;
 }
 
 .header {
@@ -21,9 +22,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 4rem;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 4rem 15px 0;
   max-width: 1440px;
 
   &__nav {
@@ -35,7 +34,6 @@ body {
   }
 
   &__link {
-    font-size: 1.6rem;
     color: $green;
     text-decoration: none;
 
@@ -45,7 +43,6 @@ body {
   }
 
   &__tel {
-    font-size: 1.6rem;
     font-weight: 500;
     color: $green;
     text-decoration: none;
@@ -88,4 +85,63 @@ body {
   img {
     display: block;
   }
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1440px;
+}
+
+.main {
+  background-image: url(../images/main.png);
+  background-position-x: center;
+  background-size: cover;
+
+  &__item {
+    margin-top: 6rem;
+    padding-left: 12rem;
+    max-width: 378px;
+  }
+
+  &__link {
+    margin-top: 6rem;
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: $font-cormorant;
+  font-weight: 700;
+  font-size: 8rem;
+
+  &__span {
+    font-style: italic;
+  }
+
+  &_block {
+    .title__span {
+      display: block;
+    }
+  }
+}
+
+.description {
+  margin: 0;
+
+  &_size_s {
+    font-size: 1.8rem;
+  }
+}
+
+.link {
+  border-radius: 3.2rem;
+  display: inline-block;
+  padding: 2.5rem 4.2rem;
+  color: $white;
+  background-color: $orange;
+  box-shadow: 0 1rem 1.1rem .2rem rgba(207, 92, 13, 0.2);
+  text-transform: uppercase;
+  text-decoration: none;
 }
