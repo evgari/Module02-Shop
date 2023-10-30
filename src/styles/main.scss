@@ -21,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto 6rem;
+  margin: 0 auto 5rem;
   padding: 4rem 15px 0;
   max-width: 1440px;
 
@@ -57,8 +57,8 @@ body {
     border: 1px solid $orange;
     border-radius: 100%;
     display: block;
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 4rem;
+    height: 4rem;
     background-color: $orange;
     background-image: url(../images/cart.svg);
     background-size: 1.6rem 1.4rem;
@@ -84,6 +84,7 @@ body {
 .logo {
   img {
     display: block;
+    width: 12rem;
   }
 }
 
@@ -96,10 +97,12 @@ body {
 
 .main {
   position: relative;
+  z-index: 0;
   padding-bottom: 187px;
   background-image: url(../images/main.png);
   background-position-x: center;
   background-size: cover;
+  background-repeat: no-repeat;
 
   &__item {
     margin-top: 6rem;
@@ -108,7 +111,7 @@ body {
   }
 
   &__link {
-    margin-top: 6rem;
+    margin-top: 5.5rem;
   }
 
   &__flex {
@@ -126,8 +129,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-basis: 763px;
-    height: 763px;
+    flex-basis: 758px;
+    height: 758px;
   }
 
   &__line {
@@ -137,14 +140,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 658px;
-    height: 658px;
+    width: 656px;
+    height: 656px;
   }
 
   &__image {
     border-radius: 100%;
     width: 92%;
     box-shadow: 10px 10px 10px rgba($green, .5);
+  }
+
+  &__text {
+    padding-top: 3.2rem;
+    padding-left: 1rem;
   }
 
   &__btn {
@@ -172,66 +180,74 @@ body {
     }
 
     &_one {
-      top: 32px;
-      left: 93px;
+      top: 51px;
+      left: 67px;
+
       &::before {
-        bottom: 0;
-        right: -24px;
+        bottom: 9px;
+        right: -35px;
       }
     }
 
     &_two {
-      top: 182px;
-      right: -5px;
+      top: 194px;
+      right: 0;
+
       &::before {
-        left: -34px;
-        bottom: 0;
+        top: 17px;
+        left: -26px;
       }
     }
 
     &_three {
-      bottom: -35px;
-      right: 236px;
+      bottom: -45px;
+      right: 244px;
+
       &::before {
-        top: -20px;
-        left: 18px;
+        top: -24px;
+        left: 13px;
       }
     }
   }
 
   &__tomato {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 110px;
+    bottom: 117px;
+    right: 104px;
+    z-index: -1;
+    width: 11rem;
   }
 
   &__cucumber {
     position: absolute;
     top: 0;
-    left: 38%;
-    width: 85px;
+    left: 34%;
+    z-index: -1;
+    width: 8.5rem;
   }
 
   &__avocado {
     position: absolute;
-    top: 50px;
+    top: 56px;
     right: 0;
-    width: 190px;
+    z-index: -1;
+    width: 17.8rem;
   }
 
   &__pepper {
     position: absolute;
-    top: 36%;
-    left: 30px;
-    width: 86px;
+    top: 397px;
+    left: 20px;
+    z-index: -1;
+    width: 8.6rem;
   }
 
   &__beans {
     position: absolute;
-    bottom: 10%;
+    bottom: 167px;
     left: 0;
-    width: 118px;
+    z-index: -1;
+    width: 10.5rem;
   }
 
   &__food {
@@ -245,6 +261,7 @@ body {
   font-family: $font-cormorant;
   font-weight: 700;
   font-size: 8rem;
+  line-height: 1;
 
   &__span {
     font-style: italic;
@@ -259,19 +276,125 @@ body {
 
 .description {
   margin: 0;
+  line-height: 1.5;
 
   &_size_s {
     font-size: 1.8rem;
+  }
+
+  &_size_m {
+    font-size: 2.4rem;
   }
 }
 
 .link {
   border-radius: 3.2rem;
   display: inline-block;
-  padding: 2.5rem 4.2rem;
+  padding: 2.3rem 4.2rem;
+  letter-spacing: 0.14rem;
   color: $white;
   background-color: $orange;
   box-shadow: 0 1rem 1.1rem .2rem rgba(207, 92, 13, 0.2);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.offer {
+  padding-top: 2rem;
+  padding-bottom: 200px;
+  background-image: url(../images/offer.png);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  &__text {
+    margin-top: 6rem;
+    max-width: 700px;
+  }
+
+  &__slider {
+    overflow: hidden;
+    padding-top: 100px;
+  }
+}
+
+.swiper {
+  overflow: initial;
+  &-slide {
+    box-sizing: border-box;
+    border: 1px solid rgba($green, .7);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem;
+    min-height: 522px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &_card_one {
+      background-image: url(../images/milk.png);
+    }
+
+    &_card_two {
+      background-image: url(../images/grocery.png);
+    }
+
+    &_card_three {
+      background-image: url(../images/meat.png);
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $font-cormorant;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    &__text {
+      margin: 0;
+      margin-top: 3.6rem;
+      max-width: 267px;
+      line-height: 1.5;
+      color: rgba($green, .7);
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 3.6rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $green;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+
+  &-pagination {
+    display: none;
+  }
+
+  &-button-next,
+  &-button-prev {
+    top: -60px;
+
+    &::after {
+      font-size: 2rem;
+      color: $green;
+    }
+  }
+
+  &-button-prev {
+    left: initial;
+    right: 92px;
+  }
+}
+
+.plus-icon {
+  width: 30px;
+  height: 30px;
 }
