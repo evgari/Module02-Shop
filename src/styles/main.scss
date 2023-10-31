@@ -9,6 +9,7 @@ $font-cormorant: 'Cormorant', serif;
 
 html {
   font-size: 10px;
+  overflow-anchor: none;
 }
 
 body {
@@ -301,7 +302,7 @@ body {
 
 .offer {
   padding-top: 2rem;
-  padding-bottom: 200px;
+  padding-bottom: 12.8rem;
   background-image: url(../images/offer.png);
   background-size: cover;
   background-position-x: center;
@@ -320,15 +321,19 @@ body {
 
 .swiper {
   overflow: initial;
+
   &-slide {
     box-sizing: border-box;
-    border: 1px solid rgba($green, .7);
-    border-radius: 3rem;
+    position: relative;
+    z-index: 0;
+    border: 1px solid rgba($green, .4);
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-end;
     padding: 4rem;
-    min-height: 522px;
+    height: 520px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -345,6 +350,27 @@ body {
       background-image: url(../images/meat.png);
     }
 
+    &:hover {
+      box-shadow: 0 0 0 2px rgba($green, .4) inset;
+
+      .swiper-slide__hover {
+        height: 233px;
+        opacity: 1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        z-index: -1;
+        border-radius: 2rem;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        background-color: rgba($white, .55);
+      }
+    }
+
     &__title {
       margin: 0;
       font-family: $font-cormorant;
@@ -353,24 +379,44 @@ body {
       line-height: 1;
     }
 
+    &__hover {
+      height: 0;
+      opacity: 0;
+    }
+
     &__text {
       margin: 0;
-      margin-top: 3.6rem;
+      margin-top: 2.5rem;
       max-width: 267px;
       line-height: 1.5;
       color: rgba($green, .7);
     }
 
     &__link {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 2rem;
       margin-top: 3.6rem;
-      text-transform: uppercase;
-      text-decoration: none;
+      font-weight: 500;
       color: $green;
-      font-weight: 700;
-      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      opacity: .8;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        background-image: url(../images/plus.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -384,7 +430,13 @@ body {
 
     &::after {
       font-size: 2rem;
-      color: $green;
+      color: rgba($green, .4);
+    }
+
+    &:hover {
+      &::after {
+        color: rgba($green, 1);
+      }
     }
   }
 
@@ -394,7 +446,58 @@ body {
   }
 }
 
-.plus-icon {
-  width: 30px;
-  height: 30px;
+.about {
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  &__text {
+    padding-top: 4.5rem;
+    padding-left: 12rem;
+    max-width: 59rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 8.5rem;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-family: $font-cormorant;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  &__icon {
+    border: 1px solid rgba($green, .4);
+    border-radius: 100%;
+    width: 8.6rem;
+    height: 8.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &_fruits {
+      background-image: url(../images/fruits.svg);
+    }
+
+    &_traditional {
+      background-image: url(../images/traditional.svg);
+    }
+
+    &_good {
+      background-image: url(../images/good.svg);
+    }
+  }
 }
+
