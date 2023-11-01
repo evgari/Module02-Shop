@@ -12,7 +12,22 @@ const swiper = new Swiper(".offerSwiper", {
   spaceBetween: 20,
   slidesPerGroup: 3,
   loop: false,
-  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  modules: [Navigation, Pagination],
+});
+
+const swiper2 = new Swiper(".trendsSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  slidesPerGroup: 3,
+  loop: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
