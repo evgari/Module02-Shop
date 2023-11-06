@@ -477,74 +477,65 @@
             <span>скидку&nbsp;5%.</span>
           </p>
           <ul class="delivery__list">
-            <li class="delivery__item">
-              <a href="#" class="delivery__link">
-                <img class="delivery__icon delivery__icon_mastercard" src="images/mastercard.svg" alt="mastercard">
-              </a>
+            <li class="delivery__item delivery__mastercard" aria-label="значек mastercard">
             </li>
-            <li class="delivery__item">
-              <a href="#" class="delivery__link">
-                <img class="delivery__icon delivery__icon_visa" src="images/visa.svg" alt="visa">
-              </a>
+            <li class="delivery__item delivery__visa" aria-label="значек visa">
             </li>
-            <li class="delivery__item">
-              <a href="#" class="delivery__link">
-                <img class="delivery__icon delivery__icon_paypal" src="images/paypal.svg" alt="paypal">
-              </a>
+            <li class="delivery__item delivery__paypal" aria-label="значек paypal">
             </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <div class="footer-bg">
-    <section class="contact">
-      <div class="container">
-        <div class="contact__box">
-          <div class="contact__item">
-            <h2 class="title title_block">
-              Не смогли
-              <span class="title__span">определиться?</span>
-            </h2>
-            <div class="contact__text">
-              <p class="description description_size_s">
-                Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры свяжутся с вами в течении рабочего дня.
-              </p>
-              <ul class="contact__list">
-                <li class="contact__list-item">
-                  <a class="contact__link contact__tel" href="tel:+79453425555">+7 945 342 55 55</a>
-                </li>
-                <li class="contact__list-item">
-                  <a class="contact__link contact__email" href="mailto:healthlyfood@mail.ru">healthlyfood@mail.ru</a>
-                </li>
-              </ul>
-            </div>
+  <section class="contact">
+    <div class="container">
+      <div class="contact__box">
+        <div class="contact__item">
+          <h2 class="title title_block">
+            Не смогли
+            <span class="title__span">определиться?</span>
+          </h2>
+          <div class="contact__text">
+            <p class="description description_size_s">
+              Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры свяжутся с вами в течении рабочего дня.
+            </p>
+            <ul class="contact__list">
+              <li class="contact__list-item">
+                <a class="contact__link contact__tel" href="tel:+79453425555">+7 945 342 55 55</a>
+              </li>
+              <li class="contact__list-item">
+                <a class="contact__link contact__email" href="mailto:healthlyfood@mail.ru">healthlyfood@mail.ru</a>
+              </li>
+            </ul>
           </div>
-          <div class="contact__form">
-            <div class="card">
-              <h3 class="card__title">Свяжитесь с нами</h3>
-              <form>
-                <label class="card__label">Ваше имя</label>
-                <input class="card__input" type="text" placeholder="Ваше имя">
-                <label class="card__label">Ваш телефон</label>
-                <input class="card__input" type="tel" placeholder="Ваш телефон">
-              </form>
-              <button class="link card__link" type="submit">заказать звонок</button>
-              <p class="card__check">
-                Нажимая на кнопку вы подтверждаете свое согласие на обработку 
-                <a class="card__docs" href="#">персональных данных</a>.
-              </p>
-            </div>
+        </div>
+        <div class="contact__form">
+          <div class="card">
+            <h3 class="card__title">Свяжитесь с нами</h3>
+            <form>
+              <label class="card__label">Ваше имя</label>
+              <input class="card__input" type="text" placeholder="Ваше имя">
+              <label class="card__label">Ваш телефон</label>
+              <input class="card__input" type="tel" placeholder="Ваш телефон">
+            </form>
+            <button class="link card__link" type="submit">заказать звонок</button>
+            <p class="card__check">
+              Нажимая на кнопку вы подтверждаете свое согласие на обработку 
+              <a class="card__docs" href="#">персональных данных</a>.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__box">
-          <a class="logo footer__logo">
-            <img src="./images/logo.svg" alt="лого">
-          </a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__box">
+        <a class="logo footer__logo">
+          <img src="./images/logo.svg" alt="лого">
+        </a>
+        <div class="footer__info">
           <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">Наша продукция</a>
@@ -585,12 +576,12 @@
             </ul>
           </div>
         </div>
-        <div class="footer__text">
-          <p class="footer__copy">&copy; 2020, Все права защищены</p>
-          <p class="footer__author">Сделано в рамках курса учебной платформы <a href="#">Frontend Blok</a></p>
-        </div>
       </div>
-    </footer>
-  </div>
+      <div class="footer__text">
+        <p class="footer__par">&copy; 2020, Все права защищены</p>
+        <p class="footer__par">Сделано в рамках курса учебной платформы <a class="footer__author" href="#">Frontend Blok</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
