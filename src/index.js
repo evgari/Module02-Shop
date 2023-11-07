@@ -39,3 +39,7 @@ const swiper2 = new Swiper(".trendsSwiper", {
   modules: [Navigation, Pagination],
 });
 
+document.querySelector('.catalog__btn').addEventListener('click', e => {
+  e.target.classList.toggle('catalog__btn_preloader');
+});
+
