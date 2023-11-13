@@ -2107,6 +2107,22 @@ blockquote {
   }
 }
 
+@media(max-width: $r_tab) {
+  @keyframes shadow {
+    0% {
+      box-shadow: 0 0 0 0 rgba($green, 0.5);
+    }
+  
+    50% {
+      box-shadow: 10px 10px 17px 0 rgba($green, 0.5);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 0 rgba($green, 0.5);
+    }
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(360deg);
