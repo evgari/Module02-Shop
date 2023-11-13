@@ -1338,6 +1338,10 @@ blockquote {
     @media(max-width: $r_tab) {
       padding-bottom: 0;
     }
+
+    @media(max-width: $r_mob_500) {
+      margin-bottom: 2.9rem;
+    }
   }
 
   &__btn {
