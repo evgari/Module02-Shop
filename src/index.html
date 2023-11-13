@@ -9,10 +9,10 @@
   <div class="main">
     <header class="header">
       <a class="logo">
-        <img src="./images/logo.svg" alt="лого">
+        <img class="logo__img" src="./images/logo.svg" alt="логотип HealhtyFood">
       </a>
       <nav class="header__navigation">
-        <ul class="header__nav">
+        <ul class="list-reset header__nav">
           <li class="header__item">
             <a href="#" class="header__link">Наша продукция</a>
           </li>
@@ -34,38 +34,42 @@
         </ul>
       </nav>
       <a href="tel:+7945342" class="header__tel">+7 945 342 55 55</a>
-      <button class="header__cart" type="button">
-        <span class="header__counter">0</span>
-      </button>
+      <div class="header__buttons">
+        <a href="tel:+7945342" class="header__phone"></a>
+        <button class="btn-reset header__menu" type="button"></button>
+        <button class="btn-reset header__cart" type="button">
+          <span class="header__counter">0</span>
+        </button>
+      </div>
     </header>
-    <h1 class="visually-hidden">Healhty food - органическая еда</h1>
+
     <div class="container">
+      <h1 class="visually-hidden">Healhty food - органическая еда</h1>
       <div class="main__flex">
         <div class="main__text">
-          <h2 class="title title_block">
+          <h2 class="title title_block main__title">
             Здоровая еда -
             <span class="title__span">это просто!</span>
           </h2>
           <div class="main__item">
-            <p class="description description_size_s">
+            <p class="description description_size_s main__description">
               Сеть магазинов полезных продуктов питания,  производство которых основано на&nbsp;принципах и стандартах органического чистых продуктов
             </p>
-            <div class="main__link">
-              <a href="" class="link">Перейти в каталог</a>
-            </div>
+            <img class="main__imagemobi" src="images/plate.png" alt="тарелка с салатом">
+            <a href="#" class="link main__link">Перейти в каталог</a>
           </div>
         </div>
         <div class="main__cover">
           <div class="main__line">
             <img class="main__image" src="images/plate.png" alt="тарелка с салатом">
           </div>
-          <button class="main__btn main__btn_one" type="button">
+          <button class="btn-reset main__btn main__btn_one" type="button">
             <span class="main__food">Авокадо</span> 134 руб
           </button>
-          <button class="main__btn main__btn_two" type="button">
+          <button class="btn-reset main__btn main__btn_two" type="button">
             <span class="main__food">Картофель</span> 169 руб
           </button>
-          <button class="main__btn main__btn_three" type="button">
+          <button class="btn-reset main__btn main__btn_three" type="button">
             <span class="main__food">Томаты</span> 215 руб
           </button>
         </div>
@@ -77,9 +81,10 @@
     <img class="main__pepper" src="images/pepper.png" alt="" aria-hidden="true">
     <img class="main__beans" src="images/beans.png" alt="" aria-hidden="true">
   </div>
+
   <section class="offer">
     <div class="container">
-      <h2 class="title title_block">
+      <h2 class="title title_block offer__title">
         Что мы
         <span class="title__span">предлагаем</span>
       </h2>
@@ -88,34 +93,33 @@
           Органика — это целостная система производства по-настоящему чистой, натуральной и полезной продукции
         </p>
       </div>
-      <div class="slider">
-        <div class="swiper offerSwiper">
+      <div class="slider offer__slider">
+        <div class="swiper js-offer-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide_card_one swiper-slide_white">
-              <h3 class="swiper-slide__title">
+            <div class="swiper-slide border-block offer__slide offer__slide_white offer__slide_1">
+              <h3 class="offer__slide-title">
                 Молочные продукты
               </h3>
-              <div class="swiper-slide__hover">
-                <p class="swiper-slide__text">
+              <div class="offer__slide-hover">
+                <p class="offer__slide-text">
                   В наши дни появилась мода на&nbsp;здоровое питание, поэтому на&nbsp;рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства
                 </p>
-                <a href="#" class="swiper-slide__link">Подробнее</a>
+                <a href="#" class="offer__slide-link">Подробнее</a>
               </div>
             </div>
-            <div class="swiper-slide swiper-slide_card_two swiper-slide_white">
-              <h3 class="swiper-slide__title">
+            <div class="swiper-slide border-block offer__slide offer__slide_white offer__slide_2">
+              <h3 class="offer__slide-title">
                 Бакалея
               </h3>
             </div>
-            <div class="swiper-slide swiper-slide_card_three swiper-slide_white">              
-              <h3 class="swiper-slide__title">
+            <div class="swiper-slide border-block offer__slide offer__slide_white offer__slide_3">              
+              <h3 class="offer__slide-title">
                 Мясо, птица
               </h3>
             </div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide border-block offer__slide">Slide 4</div>
+            <div class="swiper-slide border-block offer__slide">Slide 5</div>
+            <div class="swiper-slide border-block offer__slide">Slide 6</div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -124,19 +128,20 @@
       </div>
     </div>
   </section>
+
   <section class="about">
     <div class="container">
-      <h2 class="title title_block">
+      <h2 class="title title_block about__title">
         В чем наша
         <span class="title__span">уникальность</span>
       </h2>
       <div class="about__box">
         <div class="about__text">
-          <p class="description description_size_s">
+          <p class="description description_size_s about__description">
             Мы полностью контролируем весь цикл производства – от поля до прилавка за счет собственной серьезной материальной и научной базы. Наш подход направлен на высокие технологии и достижения научного прогресса
           </p>
         </div>
-        <ul class="about__list">
+        <ul class="list-reset about__list">
           <li class="about__item">
             Здоровье
           </li>
@@ -150,9 +155,10 @@
       </div>
     </div>
   </section>
+
   <section class="trends">
     <div class="container">
-      <h2 class="title">
+      <h2 class="title trends__title">
         Наши
         <span class="title__span">новинки</span>
       </h2>
@@ -161,78 +167,78 @@
           Будь в тренде с современым миром, и будь здоров вместе с нами
         </p>
       </div>
-      <div class="slider">
-        <div class="swiper trendsSwiper">
+      <div class="slider trends__slider">
+        <div class="swiper js-trends-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-slide__cover">
-                <img class="swiper-slide__image" src="images/catalog/good-1.png" alt="">
+            <div class="swiper-slide border-block trends__slide">
+              <div class="trends__slide-cover">
+                <img class="trends__slide-image" src="images/catalog/good-1.png" alt="">
               </div>
-              <h3 class="swiper-slide__title">
+              <h3 class="trends__slide-title">
                 Молоко топленое
               </h3>
-              <p class="swiper-slide__description">
+              <p class="trends__slide-description">
                 Молоко Healthy food топленеое мдж 4%	500гр
               </p>
-              <p class="swiper-slide__price">
+              <p class="trends__slide-price">
                 159 руб/шт
               </p>
-              <div class="swiper-slide__footer">
+              <div class="trends__slide-footer">
                 <div class="counter">
-                  <button class="counter__btn counter__minus"></button>
+                  <button class="btn-reset counter__btn counter__minus"></button>
                   <input class="counter__input" type="text" value="0">
-                  <button class="counter__btn counter__plus"></button>
+                  <button class="btn-reset counter__btn counter__plus"></button>
                 </div>
-                <a href="#" class="link">В корзину</a>
+                <button class="btn-reset link trends__slide-btn">В корзину</button>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__cover">
-                <img class="swiper-slide__image" src="images/catalog/good-2.png" alt="">
+            <div class="swiper-slide border-block trends__slide">
+              <div class="trends__slide-cover">
+                <img class="trends__slide-image" src="images/catalog/good-2.png" alt="">
               </div>
-              <h3 class="swiper-slide__title">
+              <h3 class="trends__slide-title">
                 Яйцо перепелиное
               </h3>
-              <p class="swiper-slide__description">
+              <p class="trends__slide-description">
                 QEGG Яйцо перепелиное 20шт
               </p>
-              <p class="swiper-slide__price">
+              <p class="trends__slide-price">
                 94 руб/упак
               </p>
-              <div class="swiper-slide__footer">
+              <div class="trends__slide-footer">
                 <div class="counter">
-                  <button class="counter__btn counter__minus"></button>
+                  <button class="btn-reset counter__btn counter__minus"></button>
                   <input class="counter__input" type="text" value="0">
-                  <button class="counter__btn counter__plus"></button>
+                  <button class="btn-reset counter__btn counter__plus"></button>
                 </div>
-                <a href="#" class="link">В корзину</a>
+                <button class="btn-reset link trends__slide-btn">В корзину</button>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__cover">
-                <img class="swiper-slide__image" src="images/catalog/good-3.png" alt="">
+            <div class="swiper-slide border-block trends__slide">
+              <div class="trends__slide-cover">
+                <img class="trends__slide-image" src="images/catalog/good-3.png" alt="">
               </div>
-              <h3 class="swiper-slide__title">
+              <h3 class="trends__slide-title">
                 Куриное филе Оссобуко
               </h3>
-              <p class="swiper-slide__description">
+              <p class="trends__slide-description">
                 Куриное филе Оссобуко (Ангус) охл скин. В вакумной уапаковке
               </p>
-              <p class="swiper-slide__price">
+              <p class="trends__slide-price">
                 1009 руб/кг
               </p>
-              <div class="swiper-slide__footer">
+              <div class="trends__slide-footer">
                 <div class="counter">
-                  <button class="counter__btn counter__minus"></button>
+                  <button class="btn-reset counter__btn counter__minus"></button>
                   <input class="counter__input" type="text" value="0">
-                  <button class="counter__btn counter__plus"></button>
+                  <button class="btn-reset counter__btn counter__plus"></button>
                 </div>
-                <a href="#" class="link">В корзину</a>
+                <button class="btn-reset link trends__slide-btn">В корзину</button>
               </div>
             </div>
-            <div class="swiper-slide">2</div>
-            <div class="swiper-slide">3</div>
-            <div class="swiper-slide">4</div>
+            <div class="swiper-slide border-block trends__slide">2</div>
+            <div class="swiper-slide border-block trends__slide">3</div>
+            <div class="swiper-slide border-block trends__slide">4</div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -241,9 +247,10 @@
       </div>
     </div>
   </section>
+
   <section class="catalog">
     <div class="container">
-      <h2 class="title">
+      <h2 class="title catalog__title">
         Каталог
       </h2>
       <div class="catalog__text">
@@ -251,25 +258,27 @@
           Еда которая заботиться о вашей фигуре
         </p>
       </div>
-      <ul class="category catalog__list">
-        <li class="category__item">
-          <a href="#" class="category__link">Молочные продукты</a>
-        </li>
-        <li class="category__item">
-          <a href="#" class="category__link">Бакалея</a>
-        </li>
-        <li class="category__item">
-          <a href="#" class="category__link">Мясо, птица</a>
-        </li>
-        <li class="category__item">
-          <a href="#" class="category__link">Детям</a>
-        </li>
-        <li class="category__item">
-          <a href="#" class="category__link">Овощи и фрукты</a>
-        </li>
-      </ul>
+      <div class="swiper js-category-list catalog__slider" data-mobile="false">
+        <ul class="list-reset swiper-wrapper category">
+          <li class="swiper-slide category__item">
+            <a href="#" class="category__link">Молочные продукты</a>
+          </li>
+          <li class="swiper-slide category__item">
+            <a href="#" class="category__link">Бакалея</a>
+          </li>
+          <li class="swiper-slide category__item">
+            <a href="#" class="category__link">Мясо, птица</a>
+          </li>
+          <li class="swiper-slide category__item">
+            <a href="#" class="category__link">Детям</a>
+          </li>
+          <li class="swiper-slide category__item">
+            <a href="#" class="category__link">Овощи и фрукты</a>
+          </li>
+        </ul>
+      </div>
       <div class="catalog-grid">
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-1.png" alt="">
           </div>
@@ -284,38 +293,38 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-4.png" alt="">
           </div>
           <h3 class="catalog-grid__title">
-            Йогурт с черникой
+            Йогурт с&nbsp;черникой
           </h3>
           <p class="catalog-grid__description">
-            Йогурт Healthy food  с черникой, питьевой 1,5%, 750 г
+            Йогурт Healthy food  с&nbsp;черникой, питьевой 1,5%, 750 г
           </p>
           <p class="catalog-grid__price">
             89 руб/шт
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-5.png" alt="">
           </div>
@@ -330,15 +339,15 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-6.png" alt="">
           </div>
@@ -353,15 +362,15 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-7.png" alt="">
           </div>
@@ -376,15 +385,15 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-8.png" alt="">
           </div>
@@ -399,15 +408,15 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-9.png" alt="">
           </div>
@@ -422,15 +431,15 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
 
-        <article class="catalog-grid__item">
+        <article class="border-block catalog-grid__item">
           <div class="catalog-grid__cover">
             <img class="catalog-grid__image" src="images/catalog/good-10.png" alt="">
           </div>
@@ -445,20 +454,21 @@
           </p>
           <div class="catalog-grid__footer">
             <div class="counter counter_small">
-              <button class="counter__btn counter__minus"></button>
+              <button class="btn-reset counter__btn counter__minus"></button>
               <input class="counter__input" type="text" value="0">
-              <button class="counter__btn counter__plus"></button>
+              <button class="btn-reset counter__btn counter__plus"></button>
             </div>
-            <a href="#" class="link link_small">В корзину</a>
+            <button class="btn-reset link link_small catalog-grid__btn">В корзину</button>
           </div>
         </article>
       </div>
-      <button class="catalog__btn catalog__btn_preloader">Загрузить ещё</button>
+      <button class="btn-reset catalog__btn catalog__btn_preloader">Загрузить ещё</button>
     </div>
   </section>
+
   <section class="delivery">
     <div class="container">
-      <h2 class="title">
+      <h2 class="title delivery__title">
         Доставка и
         <span class="title__span">оплата</span>
       </h2>
@@ -474,33 +484,31 @@
         <div class="delivery__pay">
           <p class="description description_size_s">
             Вы можете оплатить заказ наличными или картой курьеру, либо воспользоваться функцией онлайн-оплаты и получить
-            <span>скидку&nbsp;5%.</span>
+            <span class="delivery__span">скидку&nbsp;5%.</span>
           </p>
-          <ul class="delivery__list">
-            <li class="delivery__item delivery__mastercard" aria-label="значек mastercard">
-            </li>
-            <li class="delivery__item delivery__visa" aria-label="значек visa">
-            </li>
-            <li class="delivery__item delivery__paypal" aria-label="значек paypal">
-            </li>
+          <ul class="list-reset delivery__list">
+            <li class="delivery__item delivery__mastercard" aria-label="значек mastercard"></li>
+            <li class="delivery__item delivery__visa" aria-label="значек visa"></li>
+            <li class="delivery__item delivery__paypal" aria-label="значек paypal"></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+
   <section class="contact">
     <div class="container">
       <div class="contact__box">
         <div class="contact__item">
-          <h2 class="title title_block">
+          <h2 class="title title_block contact__title">
             Не смогли
             <span class="title__span">определиться?</span>
           </h2>
           <div class="contact__text">
             <p class="description description_size_s">
-              Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры свяжутся с вами в течении рабочего дня.
+              Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры свяжутся с&nbsp;вами в&nbsp;течении рабочего дня.
             </p>
-            <ul class="contact__list">
+            <ul class="list-reset contact__list">
               <li class="contact__list-item">
                 <a class="contact__link contact__tel" href="tel:+79453425555">+7 945 342 55 55</a>
               </li>
@@ -519,7 +527,7 @@
               <label class="card__label">Ваш телефон</label>
               <input class="card__input" type="tel" placeholder="Ваш телефон">
             </form>
-            <button class="link card__link" type="submit">заказать звонок</button>
+            <button class="btn-reset link card__link" type="submit">заказать звонок</button>
             <p class="card__check">
               Нажимая на кнопку вы подтверждаете свое согласие на обработку 
               <a class="card__docs" href="#">персональных данных</a>.
@@ -529,14 +537,15 @@
       </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__box">
         <a class="logo footer__logo">
-          <img src="./images/logo.svg" alt="лого">
+          <img class="logo__img" src="./images/logo.svg" alt="лого">
         </a>
         <div class="footer__info">
-          <ul class="footer__list">
+          <ul class="list-reset footer__list">
             <li class="footer__item">
               <a class="footer__link" href="#">Наша продукция</a>
             </li>
@@ -547,9 +556,9 @@
               <a class="footer__link" href="#">Доставка</a>
             </li>
           </ul>
-          <ul class="footer__list">
+          <ul class="list-reset footer__list">
             <li class="footer__item">
-              <address>
+              <address class="footer__address">
                 Москва, ул.&nbsp;Ленинградская&nbsp;64
               </address>              
             </li>
@@ -563,7 +572,7 @@
           <div class="footer__contact">
             <a href="tel:+79453425555" class="footer__tel footer__link">+7 945 342 55 55</a>
             <a href="mailto:healthlyfood@mail.ru" class="footer__email footer__link">e-mail: healthlyfood@mail.ru</a>
-            <ul class="footer-social">
+            <ul class="list-reset footer-social">
               <li class="footer-social__item">
                 <a href="#" target="_blank" class="footer-social__link footer-social__link_vk" aria-label="мы во в контакте"></a>
               </li>
